@@ -1,8 +1,4 @@
 const style = document.createElement("style");
-style.textContent = `
-.btn {
-}
-`;
 document.head.appendChild(style);
 //canvasVideoContainerNPV
 
@@ -22,7 +18,7 @@ function waitForElement(selector, callback) {
 }
 
 
-const button = new Spicetify.Topbar.Button("Hello", "download", () => {
+const button = new Spicetify.Topbar.Button("Biig Cat", "download", () => {
     waitForElement("#catjam-webm", (cat) => {
 	console.log(cat);
 	cat.style.display = "none";
@@ -31,7 +27,7 @@ const button = new Spicetify.Topbar.Button("Hello", "download", () => {
     let vid = document.getElementsByClassName("main-nowPlayingView-coverArtContainer")[0];
     console.log(vid);
     vid.innerHTML = '<video loop="true" style="position: relative; scale: 1.2; top: 10%" autoplay="true" muted="true" src="https://github.com/BlafKing/spicetify-cat-jam-synced/raw/main/src/resources/catjam.webm" id="catjam-webm" class="big-cat"></video>';
-    Spicetify.showNotification("Lade Spotify neu mit: Ctrl + Shift + R");
+    Spicetify.showNotification("Drücke Ctrl + Shift + R um die Katze wieder zu verkleinern");
 });
 
 let btn = button.element.children[0];
@@ -40,7 +36,6 @@ catSvg.setAttribute("height", "32");
 catSvg.setAttribute("width", "32");
 catSvg.style.transform = "rotate(180deg)";
 
-button.element.classList.add("btn");
 button.disabled = false;
 
 console.log("[BIG-CAT] Extension started");
