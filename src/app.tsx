@@ -40,7 +40,7 @@ catSvg.setAttribute("height", "32");
 catSvg.setAttribute("width", "32");
 catSvg.style.transform = "rotate(180deg)";
 
-console.log("CatSVG: ", catSvg);
-
 button.element.classList.add("btn");
 button.disabled = false;
+
+console.log("[BIG-CAT] Extension started");
