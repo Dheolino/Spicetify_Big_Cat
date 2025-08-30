@@ -1,9 +1,9 @@
 [
   {
-    "name": "Spicetify-Big-Cat",
+    "name": "Big-Cat",
     "description": "Spicetify extension to put a jamming cat instead of the video into the video player. Only works with the Cat-Jam Synced Extension from BlafKing.",
-    "preview": "./src/preview.png",
-    "main": "./dist/app.js",
+    "preview": "src/preview.png",
+    "main": "marketplace/big_cat.js",
     "readme": "README.md",
     "tags": ["cat"]
   }
